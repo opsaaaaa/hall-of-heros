@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "css"
         }
       },
       "root": "",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -93,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -124,6 +124,26 @@
           }
         }
       }
-    }},
-  "defaultProject": "hall-of-heros"
+    }
+  },
+  "defaultProject": "hall-of-heros",
+  "architect": {
+    "build": {
+      "builder": "@angular-builders/custom-webpack:browser",
+      "options": {
+        "customWebpackConfig": {
+          "path": "extra-webpack.config.js"
+        },
+        "styles": "src/tailwind.sass"
+      }
+    },
+    "serve": {
+      "builder": "@angular-builders/custom-webpack:dev-server",
+      "options": {
+        "customWebpackConfig": {
+          "path": "extra-webpack.config.js"
+        }
+      }
+    }
+  }
 }
