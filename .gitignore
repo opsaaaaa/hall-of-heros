@@ -42,6 +42,8 @@ testem.log
 /typings
 workspaces
 workspaces/*
+diagrams/*
+
 
 # System Files
 .DS_Store

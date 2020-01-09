@@ -10,7 +10,6 @@ import { HallComponent } from './hall/hall.component';
 import { DashComponent } from './dash/dash.component';
 import { HeroComponent } from './hero/hero.component';
 import { NewComponent } from './hero/new/new.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +19,13 @@ import { HomeComponent } from './home/home.component';
     HallComponent,
     DashComponent,
     HeroComponent,
-    NewComponent,
-    HomeComponent
+    NewComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: '', component: HallComponent },
       { path: 'hall', component: HallComponent },
       { path: 'heros', component: HallComponent },
       { path: 'dash', component: DashComponent },
