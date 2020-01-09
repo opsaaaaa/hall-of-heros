@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavLinksComponent implements OnInit {
   links = [
     {
-      name: 'Dashboard', 
+      name: 'Dash', 
       href: '#'
     },{
       name: 'Hall',
