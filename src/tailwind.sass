@@ -1,38 +1,26 @@
 
-.app-nav-bar
-    @apply w-full
-
-#teal-bar
-
-#nav-title
-    @apply m-3
-
-#nav-list-1
-    @apply list-none
-
+// nav links
 ul.nav.nav-links
     @apply flex list-none mr-8
-
 li.nav.nav-link
     @apply mr-2
-
-a.nav.nav-link:active
-    @apply bg-teal-700 text-teal-300
-
 a.nav.nav-link
-    @apply inline-block rounded text-teal-800 my-0 mx-1 py-1 px-4 bg-teal-300
-
+    @apply inline-block rounded text-teal-200 my-0 mx-1 py-1 px-4 bg-teal-700
 a.nav.nav-link:hover
-    @apply bg-teal-600 text-teal-200
+    @apply bg-teal-200 text-teal-700
+a.nav.nav-link:active
+    @apply bg-teal-200 text-teal-700
 
-body
-    @apply m-0
-
+// nav bar
 nav.nav.nav-bar 
     @apply flex items-center justify-between flex-wrap bg-teal-500 w-full px-6 py-1
 
+// nav title
 div.nav.nav-title
     @apply text-teal-200 flex items-center flex-shrink-0 ml-4 my-2
-
 span.nav.nav-title
     @apply font-semibold text-xl tracking-tight rounded bg-teal-700 px-5 py-2
+
+// remove body margin
+body
+    @apply m-0
