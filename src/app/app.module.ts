@@ -14,6 +14,7 @@ import { ShowComponent } from './hero/show/show.component';
 import { ListComponent } from './hero/list/list.component';
 import { EditComponent } from './hero/edit/edit.component';
 import { PageTitleComponent } from './nav-bar/page-title/page-title.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PageTitleComponent } from './nav-bar/page-title/page-title.component';
     ShowComponent,
     ListComponent,
     EditComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
