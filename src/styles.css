@@ -10674,7 +10674,7 @@ div.nav.nav-title {
   margin-bottom: 0.5rem;
 }
 
-span.nav.nav-title {
+a.nav.nav-title {
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: -0.025em;
@@ -10684,6 +10684,16 @@ span.nav.nav-title {
   padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+a.nav.nav-title:hover {
+  background-color: #b2f5ea;
+  color: #2c7a7b;
+}
+
+a.nav.nav-title:active {
+  background-color: #b2f5ea;
+  color: #2c7a7b;
 }
 
 body {

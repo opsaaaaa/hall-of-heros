@@ -10,13 +10,13 @@ export class NavLinksComponent implements OnInit {
   links = [
     {
       name: 'Dash', 
-      href: '#'
+      path: '/dash'
     },{
       name: 'Hall',
-      href: '#'
+      path: '/hall'
     },{
       name: 'New',
-      href: '#'
+      path: 'hero/new'
     }
   ];
   constructor() { }

@@ -25,7 +25,12 @@ import { NewComponent } from './hero/new/new.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HallComponent },
+      { path: '', component: DashComponent },
+      { path: 'hall', component: HallComponent },
+      { path: 'heros', component: HallComponent },
+      { path: 'dash', component: DashComponent },
+      { path: 'hero', component: HeroComponent },
+      { path: 'hero/new', component: HeroComponent },
     ])
   ],
   providers: [],

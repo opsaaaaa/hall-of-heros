@@ -21,8 +21,12 @@ nav.nav.nav-bar
 // nav title
 div.nav.nav-title
     @apply text-teal-200 flex items-center flex-shrink-0 ml-4 my-2
-span.nav.nav-title
+a.nav.nav-title
     @apply font-semibold text-xl tracking-tight rounded bg-teal-700 px-5 py-2
+a.nav.nav-title:hover
+    @apply bg-teal-200 text-teal-700
+a.nav.nav-title:active
+    @apply bg-teal-200 text-teal-700
 
 // remove body margin
 body

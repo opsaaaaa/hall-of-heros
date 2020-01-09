@@ -1,7 +1,7 @@
 <nav class="nav nav-bar">    
     <div class="nav nav-title">
         <span class="nav nav-title">
-            <a class="nav nav-title">{{ title }}</a>
+            <a class="nav nav-title" [routerLink]="[title.path]">{{ title.name }}</a>
         </span>
     </div>
     <app-nav-links>
