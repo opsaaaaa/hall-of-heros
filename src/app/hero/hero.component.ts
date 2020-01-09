@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
 
@@ -24,8 +25,7 @@ export class HeroComponent implements OnInit {
   }
   
   onNewHero() {
-    var newHero = new Hero;
-    newHero.name = 'name'
+    var newHero = new Hero('name');
     this.heroes.push(newHero)
     this.onSelect(newHero)
   }

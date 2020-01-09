@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
+import { Hero } from '../../hero';
 
 @Component({
   selector: 'app-list',
@@ -8,5 +9,7 @@ import { Output, EventEmitter } from '@angular/core';
 })
 
 export class ListComponent {
-  @Input() heroes;
+  @Input() heroes: Hero[];
+  @Input() selectedHero: Hero[];
+  @Output() select = new EventEmitter();
 }

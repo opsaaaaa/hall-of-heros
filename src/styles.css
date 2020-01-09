@@ -10704,8 +10704,25 @@ body {
 .hero.hero-item {
   background-color: #38b2ac;
   border-radius: 0.25rem;
-  padding: 0.25rem;
-  margin: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  color: #285e61;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.hero.hero-new {
+  background-color: #38b2ac;
+  border-radius: 0.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.5rem;
   text-align: center;
   color: #285e61;
   font-weight: 700;
@@ -10727,6 +10744,14 @@ body {
   border-radius: 0.25rem;
   margin: 1rem;
   padding: 1rem;
+}
+
+.selected {
+  background-color: #b2f5ea !important;
+}
+
+.plus {
+  border-radius: 9999px;
 }
 
 input {
