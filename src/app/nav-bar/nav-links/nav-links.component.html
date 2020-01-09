@@ -1,1 +1,6 @@
-<p>nav-links works!</p>
+
+<ul class="nav nav-links">
+    <li *ngFor="let link of links" class="nav nav-link">
+        <a class="nav nav-link">{{link.name}}</a>
+    </li>
+</ul>
