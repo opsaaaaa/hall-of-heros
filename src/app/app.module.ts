@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -10,6 +10,10 @@ import { HallComponent } from './hall/hall.component';
 import { DashComponent } from './dash/dash.component';
 import { HeroComponent } from './hero/hero.component';
 import { NewComponent } from './hero/new/new.component';
+import { ShowComponent } from './hero/show/show.component';
+import { ListComponent } from './hero/list/list.component';
+import { EditComponent } from './hero/edit/edit.component';
+import { PageTitleComponent } from './nav-bar/page-title/page-title.component';
 
 @NgModule({
   declarations: [
@@ -19,18 +23,22 @@ import { NewComponent } from './hero/new/new.component';
     HallComponent,
     DashComponent,
     HeroComponent,
-    NewComponent
+    NewComponent,
+    ShowComponent,
+    ListComponent,
+    EditComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: HallComponent },
       { path: 'hall', component: HallComponent },
-      { path: 'heros', component: HallComponent },
       { path: 'dash', component: DashComponent },
       { path: 'hero', component: HeroComponent },
-      { path: 'hero/new', component: HeroComponent },
+      { path: 'hero/:id', component: HeroComponent },
+      { path: 'hero/new', component: NewComponent },
     ])
   ],
   providers: [],

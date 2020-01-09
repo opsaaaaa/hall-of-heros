@@ -1,0 +1,6 @@
+<ul class="heroes">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="hero hero-item flex-auto">
+        <a>Name: {{hero.name}}</a>
+    </li>
+</ul>
+    

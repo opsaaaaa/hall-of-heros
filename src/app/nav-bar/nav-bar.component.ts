@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   title = {
-    name: 'The Hall of Heros',
+    name: 'The Hall of heroes',
     path: '/'
   };
   constructor() { }

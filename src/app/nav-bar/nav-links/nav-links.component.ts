@@ -12,16 +12,15 @@ export class NavLinksComponent implements OnInit {
       name: 'Dash', 
       path: '/dash'
     },{
-      name: 'Hall',
-      path: '/hall'
+      name: 'Heroes',
+      path: '/hero/1'
     },{
       name: 'New',
-      path: 'hero/new'
+      path: '/hero/new'
     }
   ];
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

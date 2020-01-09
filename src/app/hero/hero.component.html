@@ -1,1 +1,31 @@
-<p>hero works!</p>
+<div class="flex">
+    <!-- heros {{ heroes }} -->
+
+    <div class="flex-auto">
+
+        <h2 class="page-title">{{ selectedHero.name }}</h2>
+        <div class="page-content">
+            <div>
+                <label>{{ selectedHero.id }}:
+                    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+                </label>
+            </div>
+                
+        </div>
+
+    </div>
+    
+
+    <ul class="heroes flex-auto">
+        <h2 class="page-title">Heros</h2>
+
+        <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="hero hero-item flex-auto">
+            <a>{{hero.name}}</a>
+        </li>
+        
+        <li (click)="onNewHero()" class="hero hero-item flex-auto">
+            <a>+</a>
+        </li>
+    </ul>
+    
+</div>

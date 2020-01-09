@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hall-of-heros": {
+    "hall-of-heroes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hall-of-heros",
+            "outputPath": "dist/hall-of-heroes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hall-of-heros:build"
+            "browserTarget": "hall-of-heroes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hall-of-heros:build:production"
+              "browserTarget": "hall-of-heroes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hall-of-heros:build"
+            "browserTarget": "hall-of-heroes:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hall-of-heros:serve"
+            "devServerTarget": "hall-of-heroes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hall-of-heros:serve:production"
+              "devServerTarget": "hall-of-heroes:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "hall-of-heros",
+  "defaultProject": "hall-of-heroes",
   "architect": {
     "build": {
       "builder": "@angular-builders/custom-webpack:browser",

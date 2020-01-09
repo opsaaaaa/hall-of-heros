@@ -10698,6 +10698,42 @@ a.nav.nav-title:active {
 
 body {
   margin: 0;
+  background-color: #2d3748;
+}
+
+.hero.hero-item {
+  background-color: #38b2ac;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  text-align: center;
+  color: #285e61;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.page {
+  margin: 1.5rem;
+}
+
+.page-title {
+  color: #81e6d9;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.page-content {
+  background-color: #38b2ac;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+input {
+  background-color: #285e61;
+  color: #4fd1c5;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
 }
 
 @media (min-width: 640px) {
