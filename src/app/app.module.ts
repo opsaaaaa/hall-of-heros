@@ -16,6 +16,7 @@ import { EditComponent } from './hero/edit/edit.component';
 import { PageTitleComponent } from './nav-bar/page-title/page-title.component';
 import { MessageComponent } from './message/message.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BackComponent } from './back/back.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     ListComponent,
     EditComponent,
     PageTitleComponent,
-    MessageComponent
+    MessageComponent,
+    BackComponent
   ],
   imports: [
     BrowserModule,

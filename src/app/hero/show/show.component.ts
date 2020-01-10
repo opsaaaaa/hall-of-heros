@@ -32,5 +32,4 @@ export class ShowComponent implements OnInit {
     console.log(this.hero.id)
     this.router.navigate(['hero', this.hero.id, 'edit']);
   }
-
 }

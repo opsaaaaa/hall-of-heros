@@ -1,6 +1,11 @@
-<div class="flex flex-row flex-wrap">
+<h2 class="page-title">{{ title }}</h2>
+<div class="flex flex-col">
+    {{heros}}
+    <button 
+        *ngFor="let hero of heroes" 
+        [routerLink]="['/hero',hero.id]" 
+        class="hero hero-item flex-auto hover active">
 
-    <button *ngFor="let hero of heroes" (click)="select.emit(hero)" [class.selected]="hero === selectedHero" class="hero hero-item flex-auto">
         <a>{{hero.name}}</a>
     </button>
     

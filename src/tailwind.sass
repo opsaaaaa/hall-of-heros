@@ -51,8 +51,10 @@ body
     @apply bg-teal-500 rounded m-4 p-4
 .selected
     background-color: #b2f5ea !important
-.plus
-    @apply rounded-full     
+.hover:hover
+    @apply bg-teal-200 text-teal-700
+.active:active
+    @apply bg-teal-200 text-teal-700
 
 input
     @apply bg-teal-800 text-teal-400 rounded p-1
@@ -63,3 +65,6 @@ input
 .msg
     @apply text-center text-teal-500 p-1 bg-gray-900 font-bold
 
+// back button
+.back
+    @apply float-right text-teal-300 font-bold text-sm

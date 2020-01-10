@@ -14,10 +14,11 @@ const routes: Routes = [
   { path: '', component: HallComponent },
   { path: 'hall', component: HallComponent },
   { path: 'dash', component: DashComponent },
-  { path: 'heroes', component: HeroComponent },
+  { path: 'heroes', component: ListComponent },
+  { path: 'hero/new', component: NewComponent },
+  { path: 'hero/list', component: NewComponent },
+  { path: 'hero/edit/:id', component: EditComponent },
   { path: 'hero/:id', component: ShowComponent },
-  { path: 'hero/:id/edit', component: EditComponent },
-  { path: 'hero/new', component: NewComponent }
 ];
 
 @NgModule({

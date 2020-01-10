@@ -10759,8 +10759,14 @@ body {
   background-color: #b2f5ea !important;
 }
 
-.plus {
-  border-radius: 9999px;
+.hover:hover {
+  background-color: #b2f5ea;
+  color: #2c7a7b;
+}
+
+.active:active {
+  background-color: #b2f5ea;
+  color: #2c7a7b;
 }
 
 input {
@@ -10781,6 +10787,13 @@ input {
   padding: 0.25rem;
   background-color: #1a202c;
   font-weight: 700;
+}
+
+.back {
+  float: right;
+  color: #81e6d9;
+  font-weight: 700;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 640px) {

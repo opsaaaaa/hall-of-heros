@@ -13,10 +13,10 @@ export class NavLinksComponent implements OnInit {
       path: '/dash'
     },{
       name: 'Heroes',
-      path: '/hero/1'
+      path: '/heroes'
     },{
       name: 'New',
-      path: '/hero/new'
+      path: '/new'
     }
   ];
   constructor() { }
