@@ -28,8 +28,4 @@ export class ShowComponent implements OnInit {
     this.heroService.getHero(id).subscribe(hero => this.hero = hero)
   }
 
-  onEditHero(): void {
-    console.log(this.hero.id)
-    this.router.navigate(['hero', this.hero.id, 'edit']);
-  }
 }

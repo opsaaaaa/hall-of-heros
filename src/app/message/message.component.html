@@ -1,3 +1,8 @@
-<div *ngIf="message.messages.length" class="flex flex-col msgs">
-    <button *ngFor='let msg of message.messages' (click)="message.clear()" class="msg">{{ msg }} </button>
+<div *ngIf="message.any()" class="flex flex-col msgs">
+    <button 
+        (click)="message.clear()" 
+        class="msg">
+        
+        {{ message.last() }} 
+    </button>
 </div>

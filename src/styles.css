@@ -10626,31 +10626,6 @@ li.nav.nav-link {
   margin-right: 0.5rem;
 }
 
-a.nav.nav-link {
-  display: inline-block;
-  border-radius: 0.25rem;
-  color: #b2f5ea;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #2c7a7b;
-}
-
-a.nav.nav-link:hover {
-  background-color: #b2f5ea;
-  color: #2c7a7b;
-}
-
-a.nav.nav-link:active {
-  background-color: #b2f5ea;
-  color: #2c7a7b;
-}
-
 nav.nav.nav-bar {
   display: flex;
   align-items: center;
@@ -10686,12 +10661,12 @@ a.nav.nav-title {
   padding-bottom: 0.5rem;
 }
 
-a.nav.nav-title:hover {
+a.nav.nav-title:active {
   background-color: #b2f5ea;
   color: #2c7a7b;
 }
 
-a.nav.nav-title:active {
+a.nav.nav-title:hover {
   background-color: #b2f5ea;
   color: #2c7a7b;
 }
@@ -10757,6 +10732,21 @@ body {
 
 .selected {
   background-color: #b2f5ea !important;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: #b2f5ea;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #2c7a7b;
 }
 
 .hover:hover {

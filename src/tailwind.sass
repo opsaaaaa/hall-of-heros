@@ -7,12 +7,6 @@ ul.nav.nav-links
     @apply flex list-none mr-8
 li.nav.nav-link
     @apply mr-2
-a.nav.nav-link
-    @apply inline-block rounded text-teal-200 my-0 mx-1 py-1 px-4 bg-teal-700
-a.nav.nav-link:hover
-    @apply bg-teal-200 text-teal-700
-a.nav.nav-link:active
-    @apply bg-teal-200 text-teal-700
 
 // nav bar
 nav.nav.nav-bar 
@@ -23,9 +17,9 @@ div.nav.nav-title
     @apply text-teal-200 flex items-center flex-shrink-0 ml-4 my-2
 a.nav.nav-title
     @apply font-semibold text-xl tracking-tight rounded bg-teal-700 px-5 py-2
-a.nav.nav-title:hover
-    @apply bg-teal-200 text-teal-700
 a.nav.nav-title:active
+    @apply bg-teal-200 text-teal-700
+a.nav.nav-title:hover
     @apply bg-teal-200 text-teal-700
 
 // remove body margin
@@ -51,6 +45,8 @@ body
     @apply bg-teal-500 rounded m-4 p-4
 .selected
     background-color: #b2f5ea !important
+.btn
+    @apply inline-block rounded text-teal-200 my-0 mx-1 py-1 px-4 bg-teal-700
 .hover:hover
     @apply bg-teal-200 text-teal-700
 .active:active
