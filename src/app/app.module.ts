@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule }    from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavLinksComponent } from './nav-bar/nav-links/nav-links.component';
@@ -37,6 +37,7 @@ import { BackComponent } from './back/back.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

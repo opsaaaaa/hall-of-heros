@@ -1,6 +1,7 @@
-<div class="page-content">
-    <div>
-        <label>{{ hero.id }}:</label>
-        <input [(ngModel)]="hero.name" placeholder="name"/>
-    </div>
+
+<h2 class="page-title">Details</h2>
+
+<div class="flex flex-wrap page-content">
+    <input type="number" class="flex input-number" [(ngModel)]="hero.id" placeholder="id"/>
+    <input class="flex" [(ngModel)]="hero.name" placeholder="name"/>
 </div>

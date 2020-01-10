@@ -10764,6 +10764,16 @@ input {
   color: #4fd1c5;
   border-radius: 0.25rem;
   padding: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  min-width: 0;
+}
+
+.input-number {
+  width: 3rem;
 }
 
 .msgs {
