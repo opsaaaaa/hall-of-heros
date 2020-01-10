@@ -35,14 +35,6 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HallComponent },
-      { path: 'hall', component: HallComponent },
-      { path: 'dash', component: DashComponent },
-      { path: 'hero', component: HeroComponent },
-      { path: 'hero/:id', component: HeroComponent },
-      { path: 'hero/new', component: NewComponent },
-    ]),
     AppRoutingModule
   ],
   providers: [],
