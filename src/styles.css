@@ -10761,6 +10761,19 @@ input {
   padding: 0.25rem;
 }
 
+.msgs {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.msg {
+  text-align: center;
+  color: #38b2ac;
+  padding: 0.25rem;
+  background-color: #1a202c;
+  font-weight: 700;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

@@ -15,6 +15,7 @@ import { ListComponent } from './hero/list/list.component';
 import { EditComponent } from './hero/edit/edit.component';
 import { PageTitleComponent } from './nav-bar/page-title/page-title.component';
 import { MessageComponent } from './message/message.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MessageComponent } from './message/message.component';
       { path: 'hero', component: HeroComponent },
       { path: 'hero/:id', component: HeroComponent },
       { path: 'hero/new', component: NewComponent },
-    ])
+    ]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
